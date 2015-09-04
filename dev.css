@@ -1,0 +1,49 @@
+address, article, aside, blockquote, body, canvas, dd, div, dl, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, main, nav, noscript, ol, output, p, pre, section, table, tfoot, ul, video{
+  position: relative;
+  border:solid 1px black;
+  padding: 10px;
+}
+
+address::before, article::before, aside::before, blockquote::before, body::before, canvas::before, dd::before, div::before, dl::before, figcaption::before, figure::before, footer::before, form::before, h1::before, h2::before, h3::before, h4::before, h5::before, h6::before, header::before, hgroup::before, main::before, nav::before, noscript::before, ol::before, output::before, p::before, pre::before, section::before, table::before, tfoot::before, ul::before, video::before{
+  font-family: sans;
+  font-size:8px;
+  font-weight: normal;
+  position: absolute;
+  top:1px;
+  left:1px;
+  color: #333;
+}
+
+address::before    { content:"address#(" attr(id) ").(" attr(class) ")";}
+article::before    { content:"article#(" attr(id) ").(" attr(class) ")";}
+aside::before      { content:"aside#(" attr(id) ").(" attr(class) ")";}
+blockquote::before { content:"blockquote#(" attr(id) ").(" attr(class) ")";}
+body::before       { content:"body#(" attr(id) ").(" attr(class) ")";}
+canvas::before     { content:"canvas#(" attr(id) ").(" attr(class) ")";}
+dd::before         { content:"dd#(" attr(id) ").(" attr(class) ")";}
+div::before        { content:"div#(" attr(id) ").(" attr(class) ")";}
+dl::before         { content:"dl#(" attr(id) ").(" attr(class) ")";}
+figcaption::before { content:"figcaption#(" attr(id) ").(" attr(class) ")";}
+figure::before     { content:"figure#(" attr(id) ").(" attr(class) ")";}
+footer::before     { content:"footer#(" attr(id) ").(" attr(class) ")";}
+form::before       { content:"form#(" attr(id) ").(" attr(class) ")";}
+h1::before         { content:"h1#(" attr(id) ").(" attr(class) ")";}
+h2::before         { content:"h2#(" attr(id) ").(" attr(class) ")";}
+h3::before         { content:"h3#(" attr(id) ").(" attr(class) ")";}
+h4::before         { content:"h4#(" attr(id) ").(" attr(class) ")";}
+h5::before         { content:"h5#(" attr(id) ").(" attr(class) ")";}
+h6::before         { content:"h6#(" attr(id) ").(" attr(class) ")";}
+header::before     { content:"header#(" attr(id) ").(" attr(class) ")";}
+hgroup::before     { content:"hgroup#(" attr(id) ").(" attr(class) ")";}
+main::before       { content:"main#(" attr(id) ").(" attr(class) ")";}
+nav::before        { content:"nav#(" attr(id) ").(" attr(class) ")";}
+noscript::before   { content:"noscript#(" attr(id) ").(" attr(class) ")";}
+ol::before         { content:"ol#(" attr(id) ").(" attr(class) ")";}
+output::before     { content:"output#(" attr(id) ").(" attr(class) ")";}
+p::before          { content:"p#(" attr(id) ").(" attr(class) ")";}
+pre::before        { content:"pre#(" attr(id) ").(" attr(class) ")";}
+section::before    { content:"section#(" attr(id) ").(" attr(class) ")";}
+table::before      { content:"table#(" attr(id) ").(" attr(class) ")";}
+tfoot::before      { content:"tfoot#(" attr(id) ").(" attr(class) ")";}
+ul::before         { content:"ul#(" attr(id) ").(" attr(class) ")";}
+video::before      { content:"video#(" attr(id) ").(" attr(class) ")";}
